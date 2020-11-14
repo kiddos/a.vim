@@ -103,6 +103,15 @@ call <SID>AddAlternateExtensionMapping('mli',"ml")
 call <SID>AddAlternateExtensionMapping('aspx.cs', 'aspx')
 call <SID>AddAlternateExtensionMapping('aspx.vb', 'aspx')
 call <SID>AddAlternateExtensionMapping('aspx', 'aspx.cs,aspx.vb')
+" react
+call <SID>AddAlternateExtensionMapping('js', 'css,test.js')
+call <SID>AddAlternateExtensionMapping('jsx', 'css,test.jsx')
+call <SID>AddAlternateExtensionMapping('css', 'js')
+call <SID>AddAlternateExtensionMapping('test.js', 'js')
+" angular
+call <SID>AddAlternateExtensionMapping('ts', 'spec.ts,test.ts')
+call <SID>AddAlternateExtensionMapping('css', 'html')
+call <SID>AddAlternateExtensionMapping('html', 'css')
 
 " Setup default search path, unless the user has specified
 " a path in their [._]vimrc. 
